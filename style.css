@@ -1,0 +1,207 @@
+
+
+/* ===== ADDITIONAL E-PORTFOLIO DESIGN ===== */
+
+/* Main page layout */
+body {
+    padding: 0;
+}
+
+header {
+    background-color: #ff00ee;
+    color: white;
+    padding: 20px 8%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    border-bottom: none;
+    padding-bottom: 0;
+    gap: 15px;
+}
+
+header h2 {
+    font-size: 25px;
+}
+
+/* Main content width */
+main {
+    width: 85%;
+    max-width: 1000px;
+    margin: 35px auto;
+}
+
+/* Welcome and personal information */
+#hero {
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+#hero h1:first-child {
+    color: #a10a9c;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#hero h1,
+#hero h2 {
+    color: #a10a9c;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Lists */
+#hero ol,
+#hero ul {
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+
+#hero li {
+    padding: 4px 0;
+}
+
+/* Hide the decorative dash headings */
+#hero h1 {
+    text-align: left;
+}
+
+#hero h1:nth-of-type(3),
+#hero h1:nth-of-type(5),
+#hero h1:last-child {
+    display: none;
+}
+
+/* Featured projects */
+#projects {
+    margin-bottom: 30px;
+}
+
+#projects h2,
+#contacts h2 {
+    color: #a10a9c;
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #a10a9c;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card h3 {
+    color: #a10a9c;
+    margin-bottom: 8px;
+}
+
+/* Contact section */
+#contacts {
+    background-color: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+/* Email address */
+main + p {
+    text-align: center;
+    padding: 10px 20px 25px;
+    overflow-wrap: anywhere;
+}
+
+/* Footer */
+footer {
+    background-color: #ff00ee;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ===== DARK MODE DESIGN ===== */
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #310b4b;
+}
+
+body.dark-mode #hero,
+body.dark-mode .card,
+body.dark-mode #contacts {
+    background-color: #380c65;
+    color: #f4f6f8;
+}
+
+body.dark-mode #hero h1,
+body.dark-mode #hero h2,
+body.dark-mode #projects h2,
+body.dark-mode #contacts h2,
+body.dark-mode .card h3 {
+    color: #6607db;
+}
+
+body.dark-mode header nav {
+    border-bottom: none;
+}
+
+body.dark-mode main + p {
+    color: #f4f6f8;
+}
+
+/* ===== MOBILE DESIGN ===== */
+
+@media (max-width: 600px) {
+    header {
+        padding: 18px 5%;
+    }
+
+    header nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h2 {
+        font-size: 21px;
+    }
+
+    main {
+        width: 92%;
+        margin: 20px auto;
+    }
+
+    #hero {
+        padding: 25px 20px;
+    }
+
+    #hero h1:first-child {
+        font-size: 26px;
+    }
+
+    #projects h2,
+    #contacts h2 {
+        font-size: 23px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
+
+
