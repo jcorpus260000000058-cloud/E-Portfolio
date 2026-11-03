@@ -1,86 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-    
-    <title>Student E-Portfolio</title>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Student E-Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
     <script src="script.js" defer></script>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <h2>IT Student Portfolio</h2>
-                <!--Dynamic RTarget 1: Dark Mode Toggle-->
-                <button id="theme-btn">Toggle Dark Mode</button>
-            </nav>
-        </header>
+</head>
+<body>
 
-        <main>
-            <section id="hero">
-               
-                    <img src="myphoto.jpg"
-                         width="300"
-                         height="200">
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h2>My Portfolio</h2>
+            <div>
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button id="theme-btn">Dark Mode</button>
+        </nav>
+    </header>
 
+    <!-- Home Section -->
+    <section id="hero">
+        <img src="profile.jpg" alt="My Profile" class="profile-img">
 
-                <h1>Welcome to My E-Portfolio</h1>
-                <p>Corpus, Johan Zachary D.</p>
-                <h1>My skills</h1> 
-                <ol>
-                    <li>I can cook</li>
-                    <li>I'm well organized</li>
-                    <li>Plan out a scheduel in advance</li>
-                </ol>
-                <h1>----------------------------------</h1>
-                <h1>FAVORITES</h1>
-                <h1>----------------------------------</h1>
-                <h1>Muisc Genre:</h1>
+        <h1>Hello, I'm Johan!</h1>
+        <p>Welcome to My Student E-Portfolio</p>
+        <a href="#about" class="main-btn">Learn More</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="content">
+        <h2>About Me</h2>
+        <p>
+            My name is Corpus, Johan Zachary D.
+            I am an IT student who enjoys learning about
+            technology, programming, and computers.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="content">
+        <h2>My Skills</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Cooking</h3>
+                <p>I enjoy preparing food.</p>
+            </div>
+
+            <div class="card">
+                <h3>Organization</h3>
+                <p>I keep things neat and organized.</p>
+            </div>
+
+            <div class="card">
+                <h3>Planning</h3>
+                <p>I plan my schedules in advance.</p>
+            </div>
+        </div>
+    </section>
+
+     <!-- Favorites -->
+    <section id="skills" class="content">
+        <h2>My Skills</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Music</h3>
                 <ul>
-                    <li>Rock</li>
                     <li>Jazz</li>
-                    <li>Hip Hop</li>
+                    <li>Rock</li>
                     <li>Pop Rock</li>
+                    <li>Classic Rock</li>
                 </ul>
-                <h2>Movies:</h2>
+            </div>
+
+            <div class="card">
+                <h3>Movies</h3>
                 <ul>
-                    <li>Action</li>
-                    <li>Animated</li>
-                    <li>Adventure</li>
                     <li>Drama</li>
+                    <li>Action</li>
+                    <li>Adventure</li>
+                    <li>Comedy</li>
                 </ul>
-                <h2>Hobbies:</h2>
-                <ul>
-                    <li>Drawing</li>
-                    <li>Playing Video Games</li>
-                </ul>
-                <h1>----------------------------------</h1>
-            </section>
-            
-            <section id="projects">
-                <h2>Featured Projects</h2>
-                <div class="card">
-                    <h3>Web Integration</h3>
-                    <p>A demonstration of linking HTML, CSS, and JS</p>
-                </div>
-            </section>
+            </div>
 
-            <section id="contacts">
-                <h2>Contact</h2>
-                <!--Dynamic Target 2: Interactive Alert Button-->
-                <button id="contact-btn">Get in Touch</button>
-            </section>
-        </main>
-        <p>Gmail: jcorpus_260000000058@uic.edu.ph</p>
-        
+        </div>
+    </section>
 
-        <footer>
-            <!--Dynamic Target 3: Year Injection-->
-            <p>&copy;<span id="year"></span>ALL RIGTHS RESERVED.</p>
-        </footer>
+    <!-- Hobbies Section -->
+    <section class="content">
+        <h2>My Hobbies</h2>
+        <p>Drawing | Playing Video Games | Listening to Music</p>
+    </section>
 
-    </body>
-    </html>
+    <!-- Contact Section -->
+    <section id="contact" class="content">
+        <h2>Contact Me</h2>
+        <p>Email: jcorpus_260000000058@uic.edu.ph</p>
+        <button id="contact-btn">Get in Touch</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> My Student E-Portfolio</p>
+    </footer>
+
+</body>
+</html>
